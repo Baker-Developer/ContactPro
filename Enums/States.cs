@@ -1,4 +1,4 @@
-﻿namespace ContactPro.Enum
+﻿namespace ContactPro.Enums
 {
     public enum States
     {
