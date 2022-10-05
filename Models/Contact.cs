@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using ContactPro.Enum;
+using ContactPro.Enums;
 namespace ContactPro.Models
 {
     public class Contact
