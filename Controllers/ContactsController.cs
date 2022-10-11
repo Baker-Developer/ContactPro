@@ -70,6 +70,8 @@ namespace ContactPro.Controllers
 
             ViewData["CategoryId"] = new SelectList(categories, "Id", "Name", categoryId);
 
+
+
             return View(contacts);
         }
 
@@ -143,7 +145,7 @@ namespace ContactPro.Controllers
                 try
                 {
                     await _emailService.SendEmailAsync(emailContactVM.EmailData.EmailAddress, emailContactVM.EmailData.Subject, emailContactVM.EmailData.Body);
-                    return RedirectToAction("Index", "Contacts", new {swalMessage = "Success: Email Sent!"});
+                    return RedirectToAction("Index", "Contacts", new { swalMessage = "Success: Email Sent!" });
                 }
                 catch (Exception)
                 {
@@ -151,7 +153,7 @@ namespace ContactPro.Controllers
                     throw;
                 }
             }
-            return View(emailContactVM);    
+            return View(emailContactVM);
         }
 
 
